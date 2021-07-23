@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev:rollup": "rollup -c -w",
-    "dev:start": "nodemon --exec babel-node index.js",
+    "dev:start": "babel-node index.js",
     "dev": "npm run dev:rollup",
+    "prestart": "rollup -c",
+    "start": "babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
