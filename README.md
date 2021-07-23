@@ -45,4 +45,4 @@ To build and then serve the app:
 npm start
 ```
 
-The `npm start` will run a prestart script that will automatically run the build command and serve the app on the specified port.
+The `npm start` script will automatically run the build command and start up the Express server to serve the app.
