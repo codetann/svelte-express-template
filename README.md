@@ -18,8 +18,6 @@ git clone git@github.com:codetann/svelte-express-template.git
 
 ## Get Started
 
----
-
 Install Dependencies
 
 ```bash
@@ -34,8 +32,6 @@ npm run dev
 ```
 
 ## Production Build
-
----
 
 To create an optimised production build of the app:
 
