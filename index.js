@@ -5,7 +5,7 @@ import chalk from "chalk";
 import indexRouter from "./routes/index.router";
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 // middleware
 app.use(express.json());
