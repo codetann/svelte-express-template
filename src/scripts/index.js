@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 4000;
 
 // middleware
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "../../public")));
 
 // routes
 app.use("/", indexRouter);
@@ -17,5 +17,5 @@ app.use("/", indexRouter);
 // server
 app.listen(PORT, () => {
   const msg = chalk.blue("server");
-  console.log(`\n${msg}   - running on port 4000\n`);
+  console.log(`\n🚀 ${msg}   - running on port 4000\n`);
 });

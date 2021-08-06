@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev:rollup": "rollup -c -w",
-    "dev:start": "babel-node index.js",
+    "dev:start": "babel-node src/scripts/index.js",
     "dev": "npm run dev:rollup",
-    "prestart": "rollup -c",
-    "start": "babel-node index.js",
+    "build:server": "NODE_ENV=production babel src/scripts --out-dir server --extensions '.js'",
+    "build:client": "rollup -c",
+    "build": "npm run build:server && npm run build:client",
+    "start": "npm run build && node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
